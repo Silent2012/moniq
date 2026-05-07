@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <key>CFBundleName</key>
+    <string>moniq</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>moniq</string>
+
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>$(MARKETING_VERSION)</string>
+
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
+
+    <key>LSMinimumSystemVersion</key>
+    <string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+
+    <key>NSHumanReadableCopyright</key>
+    <string>© 2026 moniq. All rights reserved.</string>
+
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+
+    <!-- Required for monitoring other processes' memory via task_for_pid.
+         Without this, task_for_pid calls will fail silently and per-process
+         memory will show 0. The app works but with reduced accuracy. -->
+    <key>SecTaskAccess</key>
+    <array>
+        <string>allowed</string>
+    </array>
+
+    <!-- Required for NSWorkspace app tracking (standard entitlement) -->
+    <key>NSAppleEventsUsageDescription</key>
+    <string>moniq uses Apple Events to monitor running applications and track app usage.</string>
+
+    <!-- Allows the app to appear in the menu bar -->
+    <key>LSUIElement</key>
+    <false/>
+
+    <!-- Allows background operation when windows are hidden -->
+    <key>NSSupportsAutomaticTermination</key>
+    <false/>
+
+    <key>NSSuddenTerminationIsEnabled</key>
+    <false/>
+
+    <!-- Dark mode support -->
+    <key>NSRequiresAquaSystemAppearance</key>
+    <false/>
+
+    <!-- App category for App Store (if submitting) -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.utilities</string>
+</dict>
+</plist>
